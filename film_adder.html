@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="">
+  <meta name="viewport" >
+  <link rel="stylesheet" href="film_adder.css" type="text/css">
+  <title>KEKFLIX</title>
+</head>
+<body>
+ 	<main id="main">
+ 		<h2>Дополнить фильмотеку</h2>
+ 		<div id="form">
+ 			<h3>Введите данные о фильме</h3>
+ 			<form action="javascript:void(0);">
+ 				<p>Название</p>
+ 				<input id="film_title" value="Название" type="text" name="" onclick="this.select();" required>
+				<p>Режиссёр</p>
+ 				<input id="film_director" value="Режиссёр" type="text" name="" onclick="this.select();" required>
+ 				<p>Страна</p>
+ 				<input id="film_country" type="text" value="Страна" name="" onclick="this.select();" required>
+ 				<p>Жанр</p>
+ 				<select id="film_genre">
+ 					<option>Аниме</option>
+ 					<option>Боевик</option>
+ 					<option>Военная хроника</option>
+ 					<option>Детектив</option>
+ 					<option>Детское</option>
+ 					<option>Документальное</option>
+ 					<option>Драма</option>
+ 					<option>Мелодрама</option>
+ 					<option>Научная фантастика</option>
+ 					<option>Приключение</option>
+ 					<option>Триллер</option>
+ 					<option>Фантастика</option>
+ 					<option>Хоррор</option>
+ 					<option>Эротика</option>
+ 				</select>
+ 				<p>Сценарий</p>
+				<textarea name="" id="film_script" cols="30" rows="7"  onclick="this.select();" value="Какой-то сценарий" placeholder="Какой-то сценарий";></textarea>
+ 				<p>Продюсер</p>
+ 				<input id="film_producer" type="text" value="Продюсер" name="" onclick="this.select();" required>
+ 				<p>Оператор</p>
+ 				<input id="film_operator" type="text" value="Оператор" name="" onclick="this.select();" required>
+ 				<p>Композитор</p>
+ 				<input id="film_composer" type="text"  value="Композитор" name="" onclick="this.select();" required>
+ 				<p>Бюджет</p>
+ 				<input id="film_budget" type="number" value="100000" name="" onclick="this.select();" required> 
+ 				<p>Мировые сборы</p>
+ 				<input id="film_worldFees" type="number" value="200000" name="" onclick="this.select();" required>
+ 				<p>Возрастная категория</p>
+ 				<select id="film_age">
+ 					<option>0+</option>
+ 					<option>6+</option>
+ 					<option>12+</option>
+ 					<option>16+</option>
+ 					<option>18+</option>
+ 					<option>21+</option>
+ 				</select>
+ 				<p>Длительность</p>
+ 				<input id="film_duration" type="text" value="120" name="" onclick="this.select();" required>
+ 				<p>Дата выхода</p>
+ 				<input id="film_date" type="text" name="" value="2000" onclick="this.select();" required>
+				<p>Картинка</p>
+				<input id="film_img" type="file" name="">
+				<br>
+				<br>
+ 				<input id="film_add" type="submit" value="Добавить в коллекцию">
+				<button class="goto_index_button" onclick="location.href = 'index.html'">На главную страницу </button>
+ 			</form>					
+ 		</div>
+ 	</main>
+	 <div id="block" hidden>
+		<div id="pop-up_block" hidden>
+			<h3>Ваш фильм успешно добавлен!</h3>
+			<button id="hide_block_button">Остаться на странице</button>
+			<button class="goto_index_button" onclick="location.href = 'index.html'">На главную страницу </button>
+		 </div>
+	</div>
+ 	<script src="main.js"></script> 
+</body>
+</html>

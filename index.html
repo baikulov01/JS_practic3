@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css" type="text/css">
+    <title>KEKFLIX</title>
+</head>
+<body>
+	<main id="main">
+		<div id="page_start">
+			<h1>KEKFLIX</h1>
+			<h2>Лучший сервис по подбору фильмов</h2>
+			<div id="add_to_collection">
+				<h3>Добавить фильм в коллекцию</h3>
+				<button id="add_films" onclick="location.href = 'film_adder.html'"> Добавить фильм</button>
+			</div>
+			<h2>Мои фильмы</h2>
+			<div id="sort">
+				<p id="sort_by_date_p">Сортировать по дате выхода</p>
+				<button id="sort_by_date_asc">по возрастанию</button>
+				<button id="sort_by_date_desc">по убыванию</button>
+				<p id="sort_by_genre_p">Сортировать по жанру</p>
+				<select id="sort_by_genre" id="select">
+					<option>Аниме</option>
+ 					<option>Боевик</option>
+ 					<option>Военная хроника</option>
+ 					<option>Детектив</option>
+ 					<option>Детское</option>
+ 					<option>Документальное</option>
+ 					<option>Драма</option>
+ 					<option>Мелодрама</option>
+ 					<option>Научная фантастика</option>
+ 					<option>Приключение</option>
+ 					<option>Триллер</option>
+ 					<option>Фантастика</option>
+ 					<option>Хоррор</option>
+ 					<option>Эротика</option>
+				</select>
+				<button id="sort_by_genre_button">Показать</button>
+				<p id="sort_by_country_p">Сортировать по стране:</p>
+				<input id="sort_by_country" type="text">
+				<button id="sort_by_country_button">Показать</button>
+			</div>
+			
+		</div>
+		<div id="feedback" hidden>
+			<h2>Составьте отзыв</h2>
+			<p>Имя:</p>
+			<input type="text" name="" id="feed_name">
+			<p>Род занятий:</p>
+			<input type="text" name="" id="feed_profession">
+			<p>Текст</p>
+			<input type="text" id="feed_text">
+			<p>Оценка</p>
+			<div id="marks">
+				<p><input type="radio" name="1" value="1"> 1 </p>
+				<p><input type="radio" name="1" value="2"> 2 </p>
+				<p><input type="radio" name="1" value="3"> 3 </p>
+				<p><input type="radio" name="1" value="4"> 4 </p>
+				<p><input type="radio" name="1" value="5"> 5 </p>
+			</div>
+			<div>
+				<button id="send_feed">Сохранить отзыв</button>
+				<button id="exit">Назад</button>
+			</div>
+		</div>		
+	</main>
+	<script src="index.js"></script> 
+</body>
+</html>

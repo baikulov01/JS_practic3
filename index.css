@@ -1,0 +1,196 @@
+img{
+    width: 300px;
+    height: 412px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+#add_films{
+    width: 146px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+}
+#add_films:hover{
+    background: rgb(53, 167, 110);
+}
+#add_films:active{
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+p{
+    font-size: 22px;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+#sort_by_date_p{
+    font-size: 18px;
+    font-family: Helvetica;
+}
+#sort_by_genre_p{
+    font-size: 18px;
+    font-family: Helvetica;
+}
+#sort_by_country_p{
+    font-size: 18px;
+    font-family: Helvetica;
+}
+
+input{
+    width: 180px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline:none;
+}
+select{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#page_start{
+    text-align: center;
+}
+#collection{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+#collection_film__film_title{
+    text-align: center;
+}
+#collection_film__film_info{
+    display: flex;
+    justify-content: space-between;
+}
+#film_description{
+    margin-left: 50px;
+
+}
+div.fd_div{
+    display: inline-block;
+} 
+#collection_film{
+    width: 636px;
+} 
+#feedback{
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    position: fixed;
+    left: 690px;
+    top: 190px;
+    z-index: 10;
+    background-color: rgb(209, 201, 180);
+}
+
+#delete_film{
+    background-color: red;
+    box-shadow: none;
+    width: auto;
+    padding: 3px;
+    border: solid 1px black;
+}
+#delete_img{
+    width: 30px;
+    height: 30px;
+}
+
+#feed_text{
+    font-size: 16px;
+}
+
+
+#send_feed{
+    width: 200px;
+    height: 41px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+}
+#send_feed:hover{
+    background: rgb(53, 167, 110);
+}
+
+#send_feed:active{
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+#feedback p{
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+#feedback input{
+    /* width: 150px; */
+    padding: 4px;
+}
+
+#marks{
+    display: flex;
+    justify-content: center; 
+    width: 162px;
+    margin: 0 auto;
+}
+#marks input{
+    width: 20px;
+}
+
+button{
+    width: 119px;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    background: rgb(230, 208, 86);
+    box-shadow: 0 -3px rgb(197, 178, 68) inset;
+    transition: 0.2s;
+}
+button:hover{
+    background: rgb(184, 166, 68);
+}
+button:active{
+    background: rgb(173, 156, 54);
+    box-shadow: 0 3px rgb(145, 129, 40) inset;
+}
+
+#exit{
+    height: 43px;
+    color: #fff; 
+    user-select: none;
+    background: rgb(212,75,56); 
+    padding: 8px; 
+    outline: none;
+    box-shadow: none;
+    width: 150px;
+    height: 41px;
+    font-size: 18px;
+
+}
+#exit:hover{
+    background: rgb(232,95,76);
+}
+#exit:active{
+    background: rgb(152,15,0);
+}
